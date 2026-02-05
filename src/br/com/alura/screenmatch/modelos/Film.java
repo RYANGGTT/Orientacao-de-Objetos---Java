@@ -19,5 +19,9 @@ public class Film extends Title implements Classify {
     @Override
     public int getClassify() {
         return (int)mediaAssessment() / 2; // class classificavel que pega a media da class e divide por 2 e retorna esse valor
+
+
+        toString()
+
     }
 }

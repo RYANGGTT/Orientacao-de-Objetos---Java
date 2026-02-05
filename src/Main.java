@@ -4,6 +4,8 @@ import br.com.alura.screenmatch.calculo.TimeCalculator;
 import br.com.alura.screenmatch.modelos.Film;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -15,6 +17,24 @@ public class Main {
         baseFilm.setDuration(110);
         baseFilm.setPlan (true);
         baseFilm.setDirector("Gus van Sant");
+
+        var basefilme2 = new Film();
+        basefilme2.setName("Dogville");
+        basefilme2.setDuration(200);
+        basefilme2.setYearOfRealese(2012);
+        basefilme2.setPlan(true);
+
+        //Array
+
+        ArrayList<Film> listaDeFilmes = new ArrayList<>();
+
+        listaDeFilmes.add(basefilme2);
+        listaDeFilmes.add(baseFilm);
+
+        System.out.println("tamanho da lista :" + listaDeFilmes.size());
+        System.out.println("prrimeiro filme:" + listaDeFilmes.get(0).getName());
+
+
 
         //Metodos basefilm
         baseFilm.showTecnichalsheet();
@@ -53,7 +73,7 @@ public class Main {
         baseCalculator.increase(baseSerie);
         System.out.println(baseCalculator.getTotalTime());
 
-        //classificaçã
+        //classificação
         FilterOfRecomendation classification = new FilterOfRecomendation();
         classification.filter(baseFilm);
     }
