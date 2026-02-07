@@ -10,19 +10,13 @@ public class Main {
     public static void main(String[] args) {
 
         //Argumentos basefilm
-        Film baseFilm = new Film();
-        baseFilm.setName("Um gênio indomável");
-        baseFilm.setYearOfRealese(1997);
+        Film baseFilm = new Film(1997,"Um gênio indomável"  , true);
         baseFilm.setAssessment(10);
         baseFilm.setDuration(110);
-        baseFilm.setPlan (true);
         baseFilm.setDirector("Gus van Sant");
 
-        var basefilme2 = new Film();
-        basefilme2.setName("Dogville");
+        var basefilme2 = new Film(2012,"Dogville", true);
         basefilme2.setDuration(200);
-        basefilme2.setYearOfRealese(2012);
-        basefilme2.setPlan(true);
 
         //Array
 
@@ -46,14 +40,12 @@ public class Main {
 
 
         //Argumento base serie
-        Serie baseSerie = new Serie();
-        baseSerie.setName ("Cães de caça");
+        Serie baseSerie = new Serie(2023,"Cães de caça",true  );
         baseSerie.setYearOfRealese(2023);
         baseSerie.setPlan(true);
         baseSerie.setSeasons(1);
         baseSerie.setTotalEpisodes(8);
         baseSerie.setDurationPerEpisodes(50);
-        baseSerie.setActive(true);
         baseSerie.setAssessment(10);
 
 

@@ -6,6 +6,10 @@ public class Film extends Title implements Classify {
     //caracteristicas do film
     private String director;
 
+    public Film(int yearOfRealese, String name, boolean plan) {
+        super(yearOfRealese, name, plan);
+    }
+
     //getters film
     public String getDirector() {
         return director;
@@ -21,7 +25,7 @@ public class Film extends Title implements Classify {
         return (int)mediaAssessment() / 2; // class classificavel que pega a media da class e divide por 2 e retorna esse valor
 
 
-        toString()
+
 
     }
 }

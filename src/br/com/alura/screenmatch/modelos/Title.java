@@ -10,6 +10,11 @@ public class Title {
     private int totalAssessment;
     private int duration;
 
+    public Title(int yearOfRealese, String name, boolean plan) {
+        this.yearOfRealese = yearOfRealese;
+        this.name = name;
+        this.plan = plan;
+    }
 
     public void showTecnichalsheet(){ // metodo sem retorno
         System.out.println("Nome do filme/serie:" + name);

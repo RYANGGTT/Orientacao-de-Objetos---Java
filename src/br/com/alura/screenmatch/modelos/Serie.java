@@ -9,6 +9,10 @@ public class Serie extends Title {
     private int seasons;
     private boolean active;
 
+    public Serie(int yearOfRealese, String name, boolean plan) {
+        super(yearOfRealese, name, plan);
+    }
+
 
     //getters serie
     public int getTotalEpisodes() {
